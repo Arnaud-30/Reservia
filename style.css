@@ -1,0 +1,178 @@
+/* --------------------------------------------------------------------------- */
+        /* Police raleway */
+
+@font-face {
+    font-family: "raleway";
+    src: url(polices/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "raleway light";
+    src: url(polices/Raleway-Regular.ttf);
+}
+
+
+/* --------------------------------------------------------------------------- */
+        /* Body : Corp du document */
+
+body {
+    font-family: "raleway light";
+}
+
+#bloc_page { /* 1400 marges auto */
+    width: 1400px;
+    margin: auto;
+}
+
+
+/* --------------------------------------------------------------------------- */
+        /* Header et Nav */
+
+header {
+    align-items: flex-end; /* Les éléments s'alignent au bas du conteneur */
+}
+
+#bloc_header {
+    display: flex;
+    justify-content: space-between; /* Les éléments s'affichent avec un espace égal entre eux */
+}
+
+header img {
+    display: flex;
+    flex-direction: row; /* Les éléments sont disposés dans la même direction que le texte */
+    align-items: baseline; /* Base du conteneur */
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none; /* Retire les puces */
+}
+
+nav li {
+    margin: 25px;
+}
+
+nav a {
+    font-size: 1em;
+    color: #0065FC;
+    padding: auto;
+    padding: 30px;
+    text-decoration: none; /* Retire la barre */
+}
+
+.h-a {
+    color: black;
+}
+
+.s {
+    font-weight: bold;
+}
+
+nav a:hover { /* Survol de la nav */
+    border-top: 2px solid #0065FC;
+    padding-top: 47px;
+    text-decoration: none;
+    color: #0065FC;
+}
+
+
+/* --------------------------------------------------------------------------- */
+        /* Section recherche */
+
+section h1 {
+    font-size: 1.4em;
+}
+
+#bouton_recherche {
+    display: flex;
+}
+
+.map {
+    border: 1px solid #F2F2F2;
+    width: 20px; /* Largeur */
+    height: 16px; /* Hauteur */
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px; /* coins arrondis */
+    text-align: center; /* Logo centré */
+    padding: 16px;
+}
+
+.marseille {
+    font-family: "raleway light";
+    height: 50px;
+    width: 230px;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-left: 10px;
+    border: 1px solid #F2F2F2;
+}
+
+.bouton_recherche {
+    font-family: "raleway light";
+    border: 0px solid black;
+    height: 50px;
+    width: 150px;
+    background-color: #0065FC;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer; /* souris pointer */
+}
+
+
+/* --------------------------------------------------------------------------- */
+        /* Section filtre */
+
+#bloc_section_filtre {
+    display: flex;
+    flex-direction: row; /* Les éléments sont disposés dans la même direction que le texte */
+    align-items: baseline; /* Base du conteneur */
+}
+
+#bloc_section_filtre ul {
+    display: flex;
+}
+
+#bloc_section_filtre i {
+    margin: 10px;
+    padding: 13.5px;
+    margin-left: -15px;
+}
+
+#bloc_section_filtre li {
+    margin: 10px;
+    list-style-type: none;
+}
+
+#bloc_section_filtre i{
+    border: 0px solid black;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    padding-top: 15px;
+}
+
+#bloc_section_filtre a {
+    font-family: "raleway light";
+    font-size: 1.1em;
+    font-weight: bold;
+    color: black;
+    border: 1px solid #F2F2F2;
+    padding: 14px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+#bloc_section_filtre a:hover {
+    background-color: #DEEBFF;
+}
+
+#bloc_section_filtre .filtre {
+    font-family: "raleway light";
+    font-weight: bold;
+    font-size: 1.1em;
+}
