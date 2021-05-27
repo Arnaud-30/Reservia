@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" /> <!-- Encodage -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Contrôler la taille de la zone d'affichage -->
+    <meta name="description" content="Reservia, site de réservation pour des vacances de rêve en pleine nature ou en centre ville." /> <!-- Description affichée quand on recherche la page web -->
+    <meta name="keyworks" content="Reservia, reservation, vacance, rêve, nature, centre ville" /> <!-- Les mots-clés pour trouver le site web -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/3bc507d404.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
+    <title>Reservia, Prenez des vacances !</title>
+</head>
+
+<!--------------------------------------------------------------------------->
+        <!-- Body : Corps de la page et structure général du code. -->
+<body>
+    <div id="bloc_page"> <!-- 1400px -->
+        <header>
+            <div id="bloc_header">
+                <img src="images/logo/Reservia.svg" alt="Logo Reservia" />
+                <nav> <!-- Navigation dans le header -->
+                    <ul>
+                        <li><a class="h-a" href="#">Hébergements</a></li>
+                        <li><a class="h-a" href="#">Activités</a></li>
+                        <li><a class="s" href="#">S'inscrire</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+<!--------------------------------------------------------------------------->
+        <!-- Bloc section recherche : Formulaire de recherche. -->
+        <section id="bloc_section_recherche"> <!-- Au cas où -->
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+            <form method="POST" action="traitement.php"> <!-- method="post" : Traite plus de donnée - action="traitement.php" : Les données du traitement (Back-end) -->
+                <div id="bouton_recherche"> <!-- Pour pouvoir mettre la recherche en flex (CSS) -->
+                    <div class="map"><i class="fas fa-map-marker-alt"></i></div> <!-- Icon map -->
+                    <div><input class="marseille" type="search" name="recherche" id="rechercheinput" placeholder="Marseille, France" autofocus /></div> <!-- Barre de recherche -->
+                    <div><button class="bouton_recherche" type="submit">Rechercher</button></div> <!-- Bouton rechecher -->
+                </div>
+            </form>
+        </section>
+
+<!--------------------------------------------------------------------------->
+        <!-- Bloc section filtre : Filtre (éco, Fam, Rom, Ani). -->
+        <section id="bloc_section_filtre">
+            <h4 class="filtre">Filtres</h4>
+                <ul>
+                    <li><a href="#"><i class="fas fa-money-bill-wave"></i>Économique</a></li> <!-- liste - href - icon - Économique -->
+                    <li><a href="#"><i class="fas fa-child"></i>Familial</a></li> <!-- liste - href - icon - Familial -->
+                    <li><a href="#"><i class="fas fa-heart"></i>Romantique</a></li> <!-- liste - href - icon - Romantique -->
+                    <li><a href="#"><i class="fas fa-dog"></i>Animaux autorisés</a></li> <!-- liste - href - icon - Animaux autorisés -->
+                </ul>
+        </section>
+    </div>
+</body>
+</html>
