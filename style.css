@@ -78,9 +78,16 @@ nav a:hover { /* Survol de la nav */
 
 /* --------------------------------------------------------------------------- */
         /* Section recherche */
-
+#bloc_section_recherche {
+    display: flex;
+    flex-direction: column;
+}
 section h1 {
     font-size: 1.4em;
+}
+
+#bloc_section_recherche p {
+    margin-top: -8px;
 }
 
 #bouton_recherche {
@@ -175,4 +182,26 @@ section h1 {
     font-family: "raleway light";
     font-weight: bold;
     font-size: 1.1em;
+}
+
+#logements {
+    display: flex;
+    align-items: baseline;
+}
+
+.searchResultWrapiconIcon {
+    color: #0065FC;
+    border: 2px solid #F2F2F2;
+    padding: 10px;
+    border-radius: 100%;
+    font-size: 1em;
+    height: 1em;
+    width: 1em;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+
+#logements p {
+    margin-left: 10px;
 }

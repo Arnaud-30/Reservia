@@ -10,7 +10,7 @@
     <title>Reservia, Prenez des vacances !</title>
 </head>
 
-<!--------------------------------------------------------------------------->
+
         <!-- Body : Corps de la page et structure général du code. -->
 <body>
     <div id="bloc_page"> <!-- 1400px -->
@@ -27,11 +27,11 @@
             </div>
         </header>
 
-<!--------------------------------------------------------------------------->
+
         <!-- Bloc section recherche : Formulaire de recherche. -->
         <section id="bloc_section_recherche"> <!-- Au cas où -->
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p>
+            <p class="p_recherche">En plein centre ville ou en pleine nature</p>
             <form method="POST" action="traitement.php"> <!-- method="post" : Traite plus de donnée - action="traitement.php" : Les données du traitement (Back-end) -->
                 <div id="bouton_recherche"> <!-- Pour pouvoir mettre la recherche en flex (CSS) -->
                     <div class="map"><i class="fas fa-map-marker-alt"></i></div> <!-- Icon map -->
@@ -41,7 +41,7 @@
             </form>
         </section>
 
-<!--------------------------------------------------------------------------->
+
         <!-- Bloc section filtre : Filtre (éco, Fam, Rom, Ani). -->
         <section id="bloc_section_filtre">
             <h4 class="filtre">Filtres</h4>
@@ -52,6 +52,11 @@
                     <li><a href="#"><i class="fas fa-dog"></i>Animaux autorisés</a></li> <!-- liste - href - icon - Animaux autorisés -->
                 </ul>
         </section>
+        
+        <div id="logements">
+            <i class="fas fa-info searchResultWrapiconIcon"></i>
+            <p>Plus de 500 logements sont disponible dans cette ville</p>
+        </div>
     </div>
 </body>
 </html>
