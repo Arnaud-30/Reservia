@@ -500,3 +500,36 @@ figure { /* Effet ombre gris de fond */
     width: 300px;
     height: 150px;
 }
+
+
+/* --------------------------------------------------------------------------- */
+        /* Footer 3 listes */
+#footer {
+    display: flex;
+    background-color: #F2F2F2;
+    margin-top: 60px;
+    margin-left: -50px;
+}
+
+.liste ul {
+    margin: 60px; 
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-right: 90px;
+}
+
+.liste h4 {
+    margin-left: 50px;
+    font-size: 1.1em;
+}
+
+.liste li {
+    list-style-type: none;
+    margin-left: -50px;
+    margin-bottom: 10px;
+}
+
+.liste a {
+    color: black;
+    text-decoration: none;
+}
