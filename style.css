@@ -215,6 +215,7 @@ section h1 {
     height: 130px;
     width: 230px;
     border-radius: 30px 30px 0px 0px;
+    object-fit: cover;
 }
 
 .figure {
@@ -331,6 +332,7 @@ aside .image { /* Images droite */
     height: 140px;
     width: 150px;
     border-radius: 30px 0px 0px 30px;
+    object-fit: cover;
 }
 
 .droite { /* Bloc blanc aside */
@@ -362,4 +364,139 @@ aside .etoiles {
 .zoom:hover { /* Zoom */
     transform: scale(1.05);
     transition: 1s;
+}
+
+
+/* --------------------------------------------------------------------------- */
+        /* Section bloc bas */
+#h2_bas {
+    font-size: 1.em;
+}
+
+#bloc_bas { /* column avec les cartes */
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.h3_bas { /* Libellé */
+    margin-left: 15px;
+    font-size: 1em;
+}
+
+#section_bas a {
+    color: black;
+    text-decoration: none;
+}
+
+#section_bas a:hover { /* Survol de la carte */
+    color: #0065FC;
+}
+
+figure:hover { /* Zoom au survol de la carte 1 seconde pour un zoom de 1.05 */ /* Plus rapide pour la prochaine fois */
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+#section_bas { /* Les cartes en flex + space-between + marge droite */ /* flex-wrap ? */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+figure { /* Effet ombre gris de fond */
+    margin: 0px;
+    box-shadow: 3px 3px 10px #F2F2F2;
+}
+
+#figure1 { /* border titre et image */
+    width: 300px;
+    height: 450px;
+    border: 0px solid black;
+    border-radius: 30px 30px 30px 30px;
+}
+
+#image1 { /* Taille image, radius, cover */
+    border: 0px solid red;
+    border-radius: 30px 30px 30px 30px;
+    object-fit: cover; /* définit la façon dont le contenu d'un élément - https://developer.mozilla.org/fr/docs/Web/CSS/object-fit */
+    width: 300px;
+    height: 390px;
+}
+
+#figure2 {
+    height: 240px;
+    width: 300px;
+    margin-bottom: 50px;
+    border: Opx solid black;
+    border-radius: 30px 30px 30px 30px;
+}
+
+#image2 {
+    border: 0px solid red;
+    border-radius: 30px 30px 30px 30px;
+    object-fit: cover;
+    width: 300px;
+    height: 180px;
+}
+
+#figure3 {
+    height: 160px;
+    width: 300px;
+    border: 0px solid black;
+    border-radius: 30px 30px 30px 30px;
+}
+
+#image3 {
+    border: 0px solid red;
+    border-radius: 30px 30px 30px 30px;
+    object-fit: cover;
+    width: 300px;
+    height: 100px;
+}
+
+#figure4 {
+    height: 450px;
+    width: 300px;
+    border: 0px solid black;
+    border-radius: 30px 30px 30px 30px;
+}
+
+#image4 {
+    border: 0px solid red;
+    object-fit: cover;
+    border-radius: 30px 30px 30px 30px;
+    width: 300px;
+    height: 390px;
+}
+
+#figure5 {
+    height: 190px;
+    width: 300px;
+    margin-bottom: 50px;
+    border: 0px solid black;
+    border-radius: 30px 30px 30px 30px;
+}
+
+#image5 {
+    border: 0px solid red;
+    border-radius: 30px 30px 30px 30px;
+    object-fit: cover;
+    width: 300px;
+    height: 130px;
+}
+
+#figure6 {
+    height: 210px;
+    width: 300px;
+    border: 0px solid black;
+    border-radius: 30px 30px 30px 30px;
+}
+
+#image6 {
+    border: Opx solid red;
+    border-radius: 30px 30px 30px 30px;
+    object-fit: cover;
+    width: 300px;
+    height: 150px;
 }
