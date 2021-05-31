@@ -504,22 +504,21 @@ figure { /* Effet ombre gris de fond */
 
 /* --------------------------------------------------------------------------- */
         /* Footer 3 listes */
-#footer {
+footer {
     display: flex;
-    background-color: #F2F2F2;
+    background-color: #F2F2F2 ;
     margin-top: 60px;
-    margin-left: -50px;
+    height: 200px;
 }
 
 .liste ul {
-    margin: 60px; 
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-right: -80px;
     padding-right: 90px;
+    margin-left: 250px;
 }
 
 .liste h4 {
-    margin-left: 50px;
+    margin-left: 240px;
     font-size: 1.1em;
 }
 
@@ -532,4 +531,8 @@ figure { /* Effet ombre gris de fond */
 .liste a {
     color: black;
     text-decoration: none;
+}
+
+.liste a:hover {
+    text-decoration: underline;
 }
