@@ -17,26 +17,27 @@
         <header>
             <div id="bloc_header">
                 <img src="images/logo/Reservia.svg" alt="Logo Reservia" />
+                <div class="nav">
                 <nav> <!-- Navigation dans le header -->
-                    <ul>
-                        <li><a class="h-a" href="#">Hébergements</a></li>
-                        <li><a class="h-a" href="#">Activités</a></li>
-                        <li><a class="s" href="#">S'inscrire</a></li>
-                    </ul>
+                        <a class="h-a" href="#">Hébergements</a>
+                        <a class="h-a" href="#">Activités</a>
+                        
                 </nav>
+                        <a class="s" href="#">S'inscrire</a>
+                </div>
             </div>
         </header>
-
 
         <!-- Bloc section recherche : Formulaire de recherche. -->
         <section id="bloc_section_recherche"> <!-- Au cas où -->
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p class="p_recherche">En plein centre ville ou en pleine nature</p>
-            <form method="POST" action="traitement.php"> <!-- method="post" : Traite plus de donnée - action="traitement.php" : Les données du traitement (Back-end) -->
+            <form method="POST" action="traitement.php" class="search"> <!-- method="post" : Traite plus de donnée - action="traitement.php" : Les données du traitement (Back-end) -->
                 <div id="bouton_recherche"> <!-- Pour pouvoir mettre la recherche en flex (CSS) -->
                     <div class="map"><i class="fas fa-map-marker-alt"></i></div> <!-- Icon map -->
                     <div><input class="marseille" type="search" name="recherche" id="rechercheinput" placeholder="Marseille, France" autofocus /></div> <!-- Barre de recherche -->
                     <div><button class="bouton_recherche" type="submit">Rechercher</button></div> <!-- Bouton rechecher -->
+                    <button id="loupe"><i class="fas fa-search"></i></button>
                 </div>
             </form>
         </section>
@@ -60,7 +61,7 @@
 
 
         <!-- Bloc section gauche : flex avec aside -->
-        <section> <!-- section et aside flex -->
+        <section id="bloc_gauche_aside"> <!-- section et aside flex -->
             <div id="bloc_gauche"> <!-- Toutes la partie gauche -->
                 <h2 class="h2_1">Hébergements à Marseille</h2> <!-- titre h2 -->
             <div id="marseille"> <!-- flex gauche -->
@@ -172,13 +173,13 @@
             </div>
             </a>
         </div>
-                <h3 id="h3_3"><a href="index.html">Afficher plus</a></h3> <!-- Plus de choix HyperText -->
             </div>
+                <h3 id="h3_3"><a href="index.html">Afficher plus</a></h3> <!-- Plus de choix HyperText -->
             </div>
         
 
         <!-- Bloc section droite : flex avec section -->
-        <aside> <!-- Border, lien, hover, h2 -->
+        <aside id="aside"> <!-- Border, lien, hover, h2 -->
             <div id="populaire"> <!-- flex en space-between center -->
                 <h2>Les plus populaires</h2> <!-- Titre h2 avec icon -->
                 <i class="fas fa-chart-line"></i>
