@@ -17,11 +17,14 @@
 
 body {
     font-family: "raleway light";
+    margin: 0;
+    padding: 0;
 }
 
 #bloc_page { /* 1400 marges auto */
     width: 1400px;
     margin: auto;
+    margin-top: 10px;
 }
 
 
@@ -43,16 +46,18 @@ header img {
     align-items: baseline; /* Base du conteneur */
 }
 
-nav ul {
+#bloc_header .nav {
     display: flex;
     list-style-type: none; /* Retire les puces */
+    align-items: baseline;
+    margin-top: 9px;
 }
 
-nav li {
+.nav li {
     margin: 25px;
 }
 
-nav a {
+.nav a {
     font-size: 1em;
     color: #0065FC;
     padding: auto;
@@ -60,15 +65,17 @@ nav a {
     text-decoration: none; /* Retire la barre */
 }
 
-.h-a {
+.nav .h-a {
     color: black;
 }
 
-.s {
+#bloc_header .s {
     font-weight: bold;
+    color: #0065FC;
+    align-items: baseline;
 }
 
-nav a:hover { /* Survol de la nav */
+.nav .h-a:hover { /* Survol de la nav */
     border-top: 2px solid #0065FC;
     padding-top: 47px;
     text-decoration: none;
@@ -92,6 +99,10 @@ section h1 {
 
 #bouton_recherche {
     display: flex;
+}
+
+#loupe {
+    visibility: hidden;
 }
 
 .map {
@@ -511,20 +522,17 @@ footer {
     height: 200px;
 }
 
-.liste ul {
-    margin-right: -80px;
-    padding-right: 90px;
-    margin-left: 250px;
+.liste {
+    margin-left: 200px;
 }
 
 .liste h4 {
-    margin-left: 240px;
+    margin-left: 40px;
     font-size: 1.1em;
 }
 
 .liste li {
     list-style-type: none;
-    margin-left: -50px;
     margin-bottom: 10px;
 }
 
@@ -535,4 +543,323 @@ footer {
 
 .liste a:hover {
     text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------- */
+            /* Media query 1400, 1023, 750, 415, 380 */
+/* --------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1400px) {
+    
+    #bloc_page, #bloc_header, #bloc_section_recherche, #bloc_gauche, aside, footer, #bloc_section_filtre {
+        width: auto;
+    }
+
+    #bloc_header img {
+        margin-left: 30px;
+    }
+
+/* --------------------------------------------------------------------------- */
+    /* H1, p, barre de recherche */
+    #bloc_section_recherche h1 {
+        margin-left: 51px;
+        font-size: 1.6em;
+    }
+
+    #bloc_section_recherche p {
+        margin-left: 51px;
+    }
+
+    #bouton_recherche {
+        margin-left: 51px;
+        margin-top: 20px;
+    }
+
+/* --------------------------------------------------------------------------- */
+    /* Filtre */
+    #bloc_section_filtre {
+        flex-direction: column;
+    }
+
+    #bloc_section_filtre ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: auto;
+    }
+
+    #bloc_section_filtre .filtre {
+        margin-left: 51px;
+        margin-bottom: -20px;
+        margin-top: 30px;
+    }
+
+/* --------------------------------------------------------------------------- */
+    /* Logements */
+    #logements {
+        margin-left: 51px;
+    }
+    
+    #logements p {
+        margin-left: 15px;
+        font-size: 1.1em;
+    }
+
+/* --------------------------------------------------------------------------- */
+    /* Aside */
+    #bloc_gauche_aside {
+        flex-direction: column-reverse;
+    }
+
+    aside {
+        margin-left: -0px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    aside .plus_populaire {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+/* --------------------------------------------------------------------------- */ 
+    /* Section gauche */
+    #bloc_gauche div {
+        width: auto;
+        justify-content: center;
+    }
+    
+    #bloc_gauche .figure {
+        margin: 30px;
+    }
+
+/* --------------------------------------------------------------------------- */ 
+    /* Section bas */
+    #bloc_bas div {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        margin-right: -0px;
+        margin-left: 0px;
+    }
+
+    #bloc_bas a {
+        flex-wrap: wrap;
+    }
+    
+    #bloc_bas img {
+        width: 250px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 30px 30px 0px 0px;
+    }
+
+    #bloc_bas figure {
+        box-shadow: 3px 3px 10px #F2F2F2;
+        width: 250px;
+        height: 225px;
+        margin: 30px;
+    }
+
+    #bloc_bas #h2_bas {
+        margin-left: 35px;
+    }
+
+/* --------------------------------------------------------------------------- */ 
+    /* Footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .liste {
+        background-color: #F2F2F2;
+        margin-left: -20px;
+    }
+}
+
+
+/* ----- iPad (1023px) ----- */
+
+@media screen and (max-width: 1023px) {
+
+    #section_bas div {
+        display: block;
+        flex-direction: column;
+    }
+
+    #section_bas #figure1 {
+        height: 480px;
+    }
+
+    #section_bas #image1 {
+        height: 430px;
+        object-fit: cover;
+    }
+
+    #section_bas #figure4 {
+        height: 480px;
+    }
+
+    #section_bas #image4 {
+        height: 430px;
+        object-fit: cover;
+    }
+}
+
+/* ----- Iphone 6,7,8 Plus (750px) ----- */
+
+@media screen and (max-width: 750px){
+    
+    #bloc_section_filtre {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    #bloc_section_filtre ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: -30px;
+    }
+
+    #bloc_section_filtre li {
+        margin-bottom: 20px;
+        margin-top: -25px;
+    }
+
+    #bloc_section_filtre .filtre {
+        margin-left: 20px;
+        margin-bottom: 18px;
+        margin-top: 30px;
+    }
+
+
+    #bloc_section_recherche h1 {
+        margin-left: 20px;
+        font-size: 1.6em;
+    }
+
+    #bloc_section_recherche p {
+        margin-left: 20px;
+    }
+
+
+    #bouton_recherche {
+        margin-left: 20px;
+        margin-top: 20px;
+        
+    }
+    .bouton_recherche {
+        display: none;
+    }
+
+    #loupe {
+        visibility: visible;
+        border: 1px solid #0065FC;
+        background-color: #0065FC;
+        border-radius: 15px 15px 15px 15px;
+        width: 60px;
+        color: #F2F2F2;
+        padding: 15px;
+        margin-left: -10px;
+        cursor: pointer;
+    }
+
+    #logements {
+        margin-left: 20px;
+    }
+    #logements p {
+        margin-left: 10px;
+        font-size: 1.1em;
+    }
+
+    #bloc_header ul {
+        margin-left: -10px;
+    }
+}
+
+
+/* ----- Iphone 6,7,8 Plus (415px) ----- */
+
+@media screen and (max-width: 415px) {
+    aside .droite {
+        width: 320px;
+        height: 140px;
+    }
+
+    .droite img {
+        width: 120px;
+        object-fit: cover;
+    }
+
+    .droite .h3_1 {
+        font-size: 0.9em;
+        margin-left: 20px;
+    }
+
+    .droite p {
+        font-size: 0.8em;
+        margin-left: 20px;;
+    }
+
+    .droite .etoiles {
+        margin-left: 20px;
+    }
+
+    #section_bas #figure1 {
+        height: 225px;
+    }
+
+    #section_bas #image1 {
+        height: 180px;
+        object-fit: cover;
+    }
+
+    #section_bas #figure4 {
+        height: 225px;
+    }
+
+    #section_bas #image4 {
+        height: 180px;
+        object-fit: cover;
+    }
+
+    #section_bas #figure3 {
+        margin-top: 60px;
+    }
+
+    #section_bas #figure6 {
+        margin-top: 60px;
+    }
+}
+
+/* ----- Iphone 6,7,8 (380px) ----- */ 
+
+@media screen and (max-width: 380px) {
+    aside .droite {
+        width: 305px;
+        height: 140px;
+    }
+
+    .droite img {
+        width: 120px;
+        object-fit: cover;
+    }
+
+    .droite .h3_1 {
+        font-size: 0.9em;
+        margin-left: 20px;
+    }
+
+    .droite p {
+        font-size: 0.8em;
+        margin-left: 20px;;
+    }
+
+    .droite .etoiles {
+        margin-left: 20px;
+    }
 }
