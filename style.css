@@ -32,54 +32,46 @@ body {
         /* Header et Nav */
 
 header {
-    align-items: flex-end; /* Les éléments s'alignent au bas du conteneur */
-}
-
-#bloc_header {
     display: flex;
-    justify-content: space-between; /* Les éléments s'affichent avec un espace égal entre eux */
+    justify-content: space-between;
+    width: auto;
+    height: 100px;
+    margin: auto;
 }
 
-header img {
+#reservia {
     display: flex;
-    flex-direction: row; /* Les éléments sont disposés dans la même direction que le texte */
-    align-items: baseline; /* Base du conteneur */
+    justify-self: flex-start;
 }
 
-#bloc_header .nav {
-    display: flex;
-    list-style-type: none; /* Retire les puces */
-    align-items: baseline;
-    margin-top: 9px;
+nav {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    margin-top: -3px;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
 }
 
-.nav li {
-    margin: 25px;
-}
-
-.nav a {
-    font-size: 1em;
-    color: #0065FC;
-    padding: auto;
-    padding: 30px;
-    text-decoration: none; /* Retire la barre */
-}
-
-.nav .h-a {
-    color: black;
-}
-
-#bloc_header .s {
+nav .lien_s {
     font-weight: bold;
     color: #0065FC;
-    align-items: baseline;
+    text-decoration: none;
 }
 
-.nav .h-a:hover { /* Survol de la nav */
+.nav .lien:hover { /* Survol de la nav */
     border-top: 2px solid #0065FC;
     padding-top: 47px;
     text-decoration: none;
     color: #0065FC;
+}
+
+.nav .lien {
+    font-size: 1em;
+    color: black;
+    padding: auto;
+    padding: 30px;
+    text-decoration: none; /* Retire la barre */
 }
 
 
@@ -551,12 +543,12 @@ footer {
 
 @media screen and (max-width: 1400px) {
     
-    #bloc_page, #bloc_header, #bloc_section_recherche, #bloc_gauche, aside, footer, #bloc_section_filtre {
+    #bloc_page, header, #bloc_section_recherche, #bloc_gauche, aside, footer, #bloc_section_filtre {
         width: auto;
     }
 
-    #bloc_header img {
-        margin-left: 30px;
+    #reservia {
+        margin-left: 20px;
     }
 
 /* --------------------------------------------------------------------------- */
@@ -706,6 +698,15 @@ footer {
         height: 430px;
         object-fit: cover;
     }
+
+    #reservia {
+        margin-left: 20px;
+    }
+
+    nav a {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 /* ----- Iphone 6,7,8 Plus (750px) ----- */
@@ -775,12 +776,36 @@ footer {
         margin-left: 10px;
         font-size: 1.1em;
     }
-
-    #bloc_header ul {
-        margin-left: -10px;
-    }
 }
 
+
+@media screen and (max-width: 600px) {
+    nav {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #inscription {
+        grid-area: -3/-2/-2/-2;
+        justify-content: flex-end;
+    }
+
+    #hebergement, #activite:hover{
+        border-bottom: 3px solid #0065FC;
+    }
+
+    #activite {
+        width: 100%;
+    }
+
+    .nav .lien:hover {
+        border-top: none;
+    }
+
+    #reservia {
+        grid-area: -3/-2/-2/-3;
+    }
+}
 
 /* ----- Iphone 6,7,8 Plus (415px) ----- */
 
@@ -834,6 +859,32 @@ footer {
     #section_bas #figure6 {
         margin-top: 60px;
     }
+
+    nav {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #inscription {
+        grid-area: -3/-2/-2/-2;
+        justify-content: flex-end;
+    }
+
+    #hebergement, #activite:hover{
+        border-bottom: 3px solid #0065FC;
+    }
+
+    #activite {
+        width: 100%;
+    }
+
+    .nav .lien:hover {
+        border-top: none;
+    }
+
+    #reservia {
+        grid-area: -3/-2/-2/-3;
+    }
 }
 
 /* ----- Iphone 6,7,8 (380px) ----- */ 
@@ -861,5 +912,15 @@ footer {
 
     .droite .etoiles {
         margin-left: 20px;
+    }
+
+    #hebergement, #activite:hover{
+        border-bottom: 3px solid #0065FC;
+        margin-right: -10px;
+        margin-left: -10px;
+    }
+
+    #activite {
+        width: 100%;
     }
 }
