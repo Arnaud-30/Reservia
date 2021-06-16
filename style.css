@@ -773,6 +773,14 @@ footer {
         margin-left: 10px;
         font-size: 1.1em;
     }
+
+    aside {
+        border-radius: 0px;
+    }
+
+    #bloc_gauche {
+        border-radius: 0px;
+    }
 }
 
 
@@ -810,6 +818,7 @@ footer {
     aside .droite {
         width: 320px;
         height: 140px;
+        margin-top: -0px;
     }
 
     .droite img {
@@ -833,28 +842,72 @@ footer {
 
     #section_bas #figure1 {
         height: 225px;
+        width: 320px;
     }
 
     #section_bas #image1 {
         height: 180px;
+        width: 320px;
+        object-fit: cover;
+    }
+
+    #section_bas #figure2 {
+        height: 225px;
+        width: 320px;
+        margin-top: -0px;
+    }
+
+    #section_bas #image2 {
+        height: 180px;
+        width: 320px;
+        object-fit: cover;
+    }
+
+    #section_bas #figure3 {
+        height: 225px;
+        width: 320px;
+        margin-top: -0px;
+    }
+
+    #section_bas #image3 {
+        height: 180px;
+        width: 320px;
         object-fit: cover;
     }
 
     #section_bas #figure4 {
         height: 225px;
+        width: 320px;
+        margin-top: -0px;
     }
 
     #section_bas #image4 {
         height: 180px;
+        width: 320px;
         object-fit: cover;
     }
 
-    #section_bas #figure3 {
-        margin-top: 60px;
+    #section_bas #figure5 {
+        height: 225px;
+        width: 320px;
+        margin-top: -0px;
+    }
+
+    #section_bas #image5 {
+        height: 180px;
+        width: 320px;
+        object-fit: cover;
     }
 
     #section_bas #figure6 {
-        margin-top: 60px;
+        height: 225px;
+        width: 320px;
+    }
+
+    #section_bas #image6 {
+        height: 180px;
+        width: 320px;
+        object-fit: cover;
     }
 
     nav {
@@ -881,6 +934,23 @@ footer {
 
     #reservia {
         grid-area: -3/-2/-2/-3;
+    }
+
+    #bloc_gauche .figure img {
+        height: 130px;
+        width: 320px;
+        object-fit: cover;
+        margin-top: -0px;
+        
+    }
+
+    #bloc_gauche .figcaption {
+        height: 60px;
+        width: 320px;
+    }
+
+    #bloc_gauche .figure {
+        margin-top: -0px;
     }
 }
 
@@ -921,6 +991,96 @@ footer {
         width: 100%;
     }
 
+    #bloc_gauche .figure img {
+        height: 130px;
+        width: 305px;
+        object-fit: cover;
+        margin-top: -0px;
+        
+    }
+
+    #bloc_gauche .figcaption {
+        height: 60px;
+        width: 305px;
+    }
+
+    #bloc_gauche .figure {
+        margin-top: -0px;
+    }
+
+    #section_bas #figure1 {
+        height: 205px;
+        width: 305px;
+    }
+
+    #section_bas #image1 {
+        height: 160px;
+        width: 305px;
+        object-fit: cover;
+    }
+
+    #section_bas #figure2 {
+        height: 205px;
+        width: 305px;
+        margin-top: -0px;
+    }
+
+    #section_bas #image2 {
+        height: 160px;
+        width: 305px;
+        object-fit: cover;
+    }
+
+    #section_bas #figure3 {
+        height: 205px;
+        width: 305px;
+        margin-top: -0px;
+    }
+
+    #section_bas #image3 {
+        height: 160px;
+        width: 305px;
+        object-fit: cover;
+    }
+
+    #section_bas #figure4 {
+        height: 205px;
+        width: 305px;
+        margin-top: -0px;
+    }
+
+    #section_bas #image4 {
+        height: 160px;
+        width: 305px;
+        object-fit: cover;
+    }
+
+    #section_bas #figure5 {
+        height: 205px;
+        width: 305px;
+        margin-top: -0px;
+    }
+
+    #section_bas #image5 {
+        height: 160px;
+        width: 305px;
+        object-fit: cover;
+    }
+
+    #section_bas #figure6 {
+        height: 205px;
+        width: 305px;
+    }
+
+    #section_bas #image6 {
+        height: 160px;
+        width: 305px;
+        object-fit: cover;
+    }
+
+    #section_bas .h3_bas {
+        margin-top: 10px;
+    }
 
 @media screen and (max-width: 361px) {
     aside .droite {
@@ -945,6 +1105,93 @@ footer {
 
     .droite .etoiles {
         margin-left: 20px;
+    }
+
+    #bloc_gauche .figure img {
+        height: 130px;
+        width: 290px;
+        object-fit: cover;
+        margin-top: -0px;
+        
+    }
+
+    #bloc_gauche .figcaption {
+        height: 60px;
+        width: 290px;
+    }
+
+    #bloc_gauche .figure {
+        margin-top: -0px;
+    }
+
+    #section_bas #figure1 {
+        height: 205px;
+        width: 290px;
+    }
+
+    #section_bas #image1 {
+        height: 160px;
+        width: 290px;
+        object-fit: cover;
+    }
+
+    #section_bas #figure2 {
+        height: 205px;
+        width: 290px;
+        margin-top: -0px;
+    }
+
+    #section_bas #image2 {
+        height: 160px;
+        width: 290px;
+        object-fit: cover;
+    }
+
+    #section_bas #figure3 {
+        height: 205px;
+        width: 290px;
+        margin-top: -0px;
+    }
+
+    #section_bas #image3 {
+        height: 160px;
+        width: 290px;
+        object-fit: cover;
+    }
+
+    #section_bas #figure4 {
+        height: 205px;
+        width: 290px;
+        margin-top: -0px;
+    }
+
+    #section_bas #image4 {
+        height: 160px;
+        width: 290px;
+        object-fit: cover;
+    }
+
+    #section_bas #figure5 {
+        height: 205px;
+        width: 290px;
+        margin-top: -0px;
+    }
+
+    #section_bas #image5 {
+        height: 160px;
+        width: 290px;
+        object-fit: cover;
+    }
+
+    #section_bas #figure6 {
+        height: 205px;
+        width: 290px;
+    }
+
+    #section_bas #image6 {
+        height: 160px;
+        width: 290px;
+        object-fit: cover;
     }
 }    
     
